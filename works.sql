@@ -1,10 +1,9 @@
 
-create table user (
+create table works (
     id serial primary key,
     name varchar(255) not null default '',
-    last_name  varchar(255) not null default '',
-    email  varchar(255) not null default '',
-    work_id  INTEGER
+    status  BOOLEAN
 );
+select * from works;
 
-INSERT INTO user (name, email, work_id) VALUES ('bob', 'lastBob' 'bob@mail.ru', 1);
+INSERT INTO works (name, status) VALUES ('bob', true);
